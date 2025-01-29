@@ -1,7 +1,7 @@
 import userModel from "../Models/userModels.js";
 
 
-//Add products to user cart
+//Add products to user cart 
 
 export const addToCart = async(req, res)=> {
     try {
@@ -10,7 +10,7 @@ export const addToCart = async(req, res)=> {
         const userData = await userModel.findById(userId)
         let cartData = await userData.cartData
 
-        if(cartData[itemId]){
+        if(cartData[itemId]){ 
 
             if(cartData[itemId][size]){
                 cartData[itemId][size] +=1 

@@ -5,7 +5,7 @@ import axios from 'axios'
 
 export const ShopContext = createContext();
 
-
+  
 const ShopContextProvider = (props)=>{
   
     const currency = '$'; 
